@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Linux Biolinum Capitals';
+    src: url('LinBiolinumCapitals.eot');
+    src: url('LinBiolinumCapitals.eot?#iefix') format('embedded-opentype'),
+        url('LinBiolinumCapitals.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum Capitals';
+    src: url('LinBiolinumCapitalsB.eot');
+    src: url('LinBiolinumCapitalsB.eot?#iefix') format('embedded-opentype'),
+        url('LinBiolinumCapitalsB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum';
+    src: url('LinBiolinum.eot');
+    src: url('LinBiolinum.eot?#iefix') format('embedded-opentype'),
+        url('LinBiolinum.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Linux Biolinum';
+    src: url('LinBiolinumB.eot');
+    src: url('LinBiolinumB.eot?#iefix') format('embedded-opentype'),
+        url('LinBiolinumB.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

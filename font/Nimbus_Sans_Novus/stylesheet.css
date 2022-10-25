@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Nimbus Sans Novus T Ultra';
+    src: url('NimbusSansNovusT-UltraLight.eot');
+    src: url('NimbusSansNovusT-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('NimbusSansNovusT-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+

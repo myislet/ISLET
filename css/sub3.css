@@ -1,0 +1,603 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+
+@font-face {
+    font-family: 'Nimbus Sans Novus T Ultra';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/Nimbus_Sans_Novus/NimbusSansNovusT-UltraLight.eot);
+    src: url(../font/Nimbus_Sans_Novus/NimbusSansNovusT-UltraLight.eot) format('embedded-opentype'),
+        url(../font/Nimbus_Sans_Novus/NimbusSansNovusT-UltraLight.woff) format('woff'),
+        url(../font/Nimbus_Sans_Novus/NimbusSansNovusT-UltraLight.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Linux Biolinum';
+    font-style: normal;
+    font-weight: 200;
+    src: url(../font/linux_biolinum/LinBiolinum.eot);
+    src: url(../font/linux_biolinum/LinBiolinum.eot) format('embedded-opentype'),
+        url(../font/linux_biolinum/LinBiolinum.woff) format('woff'),
+        url(../font/linux_biolinum/LinBiolinum.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Linux Biolinum';
+    font-style: bold;
+    font-weight: 400;
+    src: url(../font/linux_biolinum/LinBiolinumB.eot);
+    src: url(../font/linux_biolinum/LinBiolinumB.eot) format('embedded-opentype'),
+        url(../font/linux_biolinum/LinBiolinumB.woff) format('woff'),
+        url(../font/linux_biolinum/LinBiolinumB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Linux Biolinum Capitals';
+    font-style: normal;
+    font-weight: normal;
+    src: url(../font/linux_biolinum/LinBiolinumCapitals.eot);
+    src: url(../font/linux_biolinum/LinBiolinumCapitals.eot) format('embedded-opentype'),
+        url(../font/linux_biolinum/LinBiolinumCapitals.woff) format('woff'),
+        url(../font/linux_biolinum/LinBiolinumCapitals.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Linux Biolinum Capitals';
+    font-style: bold;
+    font-weight: 400;
+    src: url(../font/linux_biolinum/LinBiolinumCapitalsB.eot);
+    src: url(../font/linux_biolinum/LinBiolinumCapitalsB.eot) format('embedded-opentype'),
+        url(../font/linux_biolinum/LinBiolinumCapitalsB.woff) format('woff'),
+        url(../font/linux_biolinum/LinBiolinumCapitalsB.ttf) format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    font-family: 'Linux Biolinum Capitals';
+    font-size: 15px;
+    line-height: 24px;
+    color: #000;
+    min-width: 1450px;
+}
+
+
+/*header*/
+#header {
+    background-image: url(../images/sub3_main.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 920px;
+    color: white;
+}
+
+#header .login li a {
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
+    vertical-align: middle;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#header .login {
+    display: flex;
+    justify-content: right;
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 28px;
+    line-height: 28px;
+}
+
+.menu {
+    margin: 0 auto;
+    width: 1320px;
+    height: 70px;
+}
+
+.menu>ul>li {
+    display: inline-block;
+    font-size: 22px;
+    padding-left: 30px;
+}
+
+.menu>img {
+    float: left;
+}
+
+.menu ul {
+    float: right;
+    margin-top: 25px;
+}
+
+
+#header p {
+    font-family: 'Nimbus Sans Novus T Ultra';
+    font-size: 70px;
+    line-height: 100%;
+}
+
+#header {
+    position: relative;
+}
+
+.slo {
+    margin: 0 auto;
+    width: 1200px;
+    padding-top: 180px;
+    text-align: center;
+}
+.login li:hover a {
+    color: #000;
+}
+
+
+/*메뉴 호버 스타일 */
+.line {
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    height: 3px;
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transition-property: opacity, transform;
+    transition-duration: 0.5s;
+}
+
+.menu>ul>li>a:hover .line {
+    transform: scaleX(1);
+    opacity: 1;
+    visibility: visible;
+}
+
+/*title*/
+
+#title {
+    margin: 30px auto;
+    width: 1320px;
+    text-align: center;
+}
+
+#title h1 {
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+#title p {
+    font-family: 'Open Sans', 'San serif';
+    font-size: 25px;
+}
+
+
+/*membership*/
+
+#membership {
+    margin: 150px auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#membership div {
+    float: left;
+    width: 420px;
+    height: 550px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 15px 4px rgb(0 0 0 / 10%);
+    margin-right: 30px;
+}
+
+#membership div:nth-child(3) {
+    margin-right: 0;
+}
+
+#member {
+    text-align: center;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+#member h2 {
+    font-size: 30px;
+    font-family: 'Linux Biolinum';
+    font-weight: 200;
+    padding: 25px 0 15px 0;
+}
+
+#member h5 {
+    font-family: 'Linux Biolinum';
+    font-weight: 200;
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#member h4 {
+    font-family: 'Open Sans', 'San serif';
+    font-weight: normal;
+    font-size: 20px;
+    padding-bottom: 37px;
+}
+
+#member p {
+    text-align: left;
+    font-family: 'Open Sans', 'San serif';
+    font-size: 18px;
+    line-height: 27px;
+    height: 27px;
+    padding-bottom: 5px;
+}
+
+#member span {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+    padding-left: 5px;
+}
+
+.subtitle {
+    margin-bottom: 60px;
+}
+
+
+/*멤버십 가이드*/
+#guide {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+#guide ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Open Sans', 'San serif';
+    font-size: 20px;
+    text-align: center;
+}
+
+#guide ul li {
+    border: 1.5px solid rgb(172, 172, 172);
+    width: 350px;
+    height: 80px;
+    line-height: 80px;
+    box-sizing: border-box;
+}
+
+#guide ul li img {
+    padding-right: 5px;
+}
+
+/*banner*/
+#banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 373px;
+    text-align: center;
+    margin: 240px auto;
+}
+
+#banner_text {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+#banner h1 {
+    font-size: 40px;
+    font-family: 'Linux Biolinum';
+    color: #fff;
+    padding: 90px 0 50px 0;
+    line-height: 40px;
+}
+
+#banner p {
+    font-family: 'Open Sans', 'San serif';
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+#banner ul {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#banner ul li {
+    float: left;
+    padding-right: 20px;
+}
+
+#banner ul li:nth-child(2) {
+    padding-right: 0;
+}
+
+/*FAQ*/
+#faq {
+    margin: 0 auto;
+    width: 1320px;
+}
+
+#faq h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Linux Biolinum';
+    padding-bottom: 60px;
+}
+
+#contents {
+    font-family: 'Open Sans', 'San serif';
+    font-size: 20px;
+    margin-bottom: 220px;
+}
+
+.question {
+    padding: 10px 30px;
+    border: 2px solid rgb(219, 177, 131);
+    overflow: hidden;
+}
+
+.question_in {
+    float: left;
+}
+
+.plus {
+    float: right;
+}
+
+.answer {
+    padding: 40px 50px;
+    font-size: 18px;
+    display: none;
+}
+
+.answer h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.turn .question img {
+    transform: rotate(180deg);
+}
+
+.turn .question {
+    background-color: rgb(219, 177, 131);
+    color: #fff;
+}
+
+.plus img {
+    transition: transform 0.5s;
+}
+
+
+/*footer*/
+
+
+#footer {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: 'Open Sans', 'San serif';
+    font-size: 15px;
+    margin-top: 250px;
+}
+
+#footer_inner {
+    margin: 0 auto;
+    width: 1320px;
+    padding: 70px 0 55px 0;
+}
+
+#footer_inner div {
+    float: left;
+}
+
+#footer_inner .logo {
+    float: left;
+    width: 140px;
+    height: 100%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+
+#footer_inner .info {
+    width: 1180px;
+    height: 100%;
+    position: relative;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.terms li,
+.sns_icon li {
+    float: left;
+}
+
+.terms {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.terms li {
+    display: inline-block;
+    line-height: 100%;
+    padding: 0 15px;
+}
+
+.terms li:nth-child(1) {
+    padding-left: 0;
+}
+
+
+.add li {
+    float: left;
+    padding: 0 25px;
+    display: inline-block;
+    line-height: 90%;
+    border-right: 1px solid #000;
+}
+
+.add li:nth-child(1) {
+    padding-left: 0;
+}
+
+.add li:nth-child(3) {
+    border-right: none;
+}
+
+.add {
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.sns_icon {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+.sns_icon li {
+    padding-left: 5px;
+}
+
+/*top 버튼*/
+#footer {
+    position: relative;
+}
+
+.top {
+    position: fixed;
+    bottom: 70px;
+    right: 100px;
+    z-index: 10;
+}
+
+/*popup*/
+#popup {
+    margin: 0 auto;
+    width: 500px;
+    padding: 50px 80px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', 'San serif';
+    font-weight: normal;
+    color: #424242;
+    position: fixed;
+    top: 100px;
+    left: 750px;
+    display: none;
+    z-index: 50;
+    background-color: #fff;
+}
+
+#popup>h1 {
+    font-size: 40px;
+    font-weight: normal;
+    padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+#popup h2 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#popup input {
+    border-bottom: 1px dashed #000;
+    width: 95%;
+    color: #000;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+
+#popup .check_box {
+    width: 20px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.login_box a {
+    display: block;
+}
+
+.login_box {
+    background-color: antiquewhite;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#popup .forgot {
+    width: 100%;
+    text-align: center;
+}
+
+#popup .forgot a {
+    display: inline-block;
+    border-bottom: 1px solid #424242;
+    padding-bottom: 2px;
+}
+
+#popup ul {
+    width: 100%;
+    height: 60px;
+    background-color: #dbdbdb;
+    margin: 50px 0 0 0;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+#popup ul li a {
+    font-size: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+#popup .close:hover img{
+    transform: rotate(30deg);
+    transition: all 0.3s;
+}
+
+input{
+    outline-style: none;
+    border: none;
+}
