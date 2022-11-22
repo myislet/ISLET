@@ -552,7 +552,7 @@ body {
 .top {
     position: fixed;
     bottom: 70px;
-    right: 100px;
+    right: 30px;
     z-index: 10;
 }
 
@@ -567,7 +567,8 @@ body {
     color: #424242;
     position: fixed;
     top: 100px;
-    left: 750px;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
     z-index: 50;
     background-color: #fff;
